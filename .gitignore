@@ -4,3 +4,11 @@
 *.classpath
 *.project
 /*.settings/*
+/AjaxBankingProject/.settings/org.eclipse.wst.validation.prefs
+/AjaxBankingProject/.settings/org.eclipse.wst.jsdt.ui.superType.name
+/AjaxBankingProject/.settings/org.eclipse.wst.jsdt.ui.superType.container
+/AjaxBankingProject/.settings/org.eclipse.wst.common.project.facet.core.xml
+/AjaxBankingProject/.settings/org.eclipse.wst.common.component
+/AjaxBankingProject/.settings/org.eclipse.m2e.core.prefs
+/AjaxBankingProject/.settings/org.eclipse.jdt.core.prefs
+/AjaxBankingProject/.settings/.jsdtscope
