@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<h2 class="pt-5 pl-2">All Memories</h2>
+<div id="all-memories">
+	<div class="pr-1 row justify-content-end">
+		<div class="col-3 pb-2 align-self-end">
+      		<input class="form-control search" placeholder="Search">
+    	</div>
+	</div>
+	<table class="table table-hover" id="all-memories-table">
+	<thead>
+		<th>#</th>
+		<th>Submitted</th>
+		<th>Type</th>
+		<th>Amount</th>
+		<th>Status</th>
+		<th>Details</th>
+	</thead>
+	<tbody class="list"></tbody>
+</table>
+</div>
+
+<!--  Hidden Modal Dialog (Allow View Of Reimbursement) -->
+<div class="modal fade" id="view-details" tabindex="-1" role="dialog" aria-labelledby="ViewReimbursement" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="details-title">Memory Detail of ID#<span class="m-mid"></span></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<table class="table">
+					<tr>
+						<th>Memory Id</th>
+						<td class="m-mid"></td>
+					</tr>
+					<tr>
+						<th>Author</th>
+						<td id="m-author"></td>
+					</tr>
+					<tr>
+						<th>Submitted</th>
+						<td id="m-submitted"></td>
+					</tr>
+					<tr>
+						<th>Resolved</th>
+						<td id="m-resolved"></td>
+					</tr>
+					<tr>
+						<th>Resolver</th>
+						<td id="m-resolver"></td>
+					</tr>
+					<tr>
+						<th>Amount</th>
+						<td id="m-amount"></td>
+					</tr>
+					<tr>
+						<th>Type</th>
+						<td id="m-type"></td>
+					</tr>
+					<tr>
+						<th>Status</th>
+						<td id="m-status"></td>
+					</tr>
+					<tr>
+						<th>Description</th>
+						<td id="m-description"></td>
+					</tr>
+					<tr>
+						<th>Receipt</th>
+						<td id="m-receipt"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="modal-footer">
+				<button data-dismiss="modal" type="button" class="btn btn-dark">Close</button>
+			</div>
+		</div>
+	</div>
+</div> <!-- modal -->
+
+<script type="text/javascript">
+
+// Get all reimbursements for current user.
+function retrieveAllMemories() {
+	var allData;
+
+	// Add loading icon.
+	$('h2').append('<i id="please-wait" class="fa fa-refresh fa-spin fa-fw"></i>');
+	
+	let xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4 && xhr.status ==200){
+			let allMemories = JSON.parse(xhr.responseText);
+
+			// Construct the table from the data.
+			let rows = "";
+			for (let i = 0; i < allMemories.length; i++) {
+				rows = rows + "<tr>";
+				rows = rows + '<td class="t-id">'+allMemories[i].id+"</td>";
+				rows = rows + '<td class="t-date">'+formatDateTime(allMemories[i].submitted)+"</td>";
+				rows = rows + '<td class="t-type">'+allMemories[i].typeName+"</td>";
+				rows = rows + '<td class="t-amount">'+formatMoney(allMemories[i].amount)+"</td>";
+				rows = rows + '<td class="t-status">'+allMemories[i].statusName+"</td>";
+				rows = rows + '<td><a tid="'+allMemories[i].id+'" class="all-memories-detail badge badge-info" href="#">View</a></td>';
+			}
+
+			// Append to the table above.
+			$('#all-memories-table>tbody').append(rows);
+
+			// Remove the loading icon.
+			$('#please-wait').remove();
+
+			// Allow Searching.
+			let options = {
+                valueNames: [ 't-id', 't-type', 't-amount', 't-status' ]
+            };
+
+        	let userList = new List('all-memories', options);
+
+        	// Store locally for use
+        	allData = allMemories;
+
+        	// Add dynamic click to view links
+			$('.all-memories-detail').on('click', function () {
+				let i = $(this).attr('tid');
+				$('.m-mid').html(allData[i].id);
+				$('#m-author').html(allData[i].authorName);
+				$('#m-submitted').html(formatDateTime(allData[i].submitted));
+				$('#m-resolved').html(formatDateTime(allData[i].resolved));
+				$('#m-resolver').html(allData[i].resolverName);
+				$('#m-amount').html(formatMoney(allData[i].amount));
+				$('#m-type').html(allData[i].typeName);
+				$('#m-status').html(allData[i].statusName);
+				$('#m-description').html(allData[i].description);
+				$('#m-receipt').html(formatImage(allData[i].receipt));
+			});
+		}
+	} // onreadysatatechange()
+
+	xhr.open("POST", "ajaxAllMemories", true);
+	xhr.send();
+}
+</script>

@@ -1,0 +1,30 @@
+$black-color: #000000;
+$nav-color: #343a40;
+$white-color: #FFFFFF;
+$color: $white-color;
+
+html, body {
+	background-color: $nav-color;
+}
+
+.background-cover {
+  height: 100%;
+  background-color: $color;
+}
+
+.left-backsplash  {
+	background-image: url('../img/left-backsplash.png');
+	background-position: left center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: inherit;	
+}
+
+.right-backsplash  {
+  background-image: url('../img/right-backsplash.png');
+	background-position: right center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: inherit;	
+}
+

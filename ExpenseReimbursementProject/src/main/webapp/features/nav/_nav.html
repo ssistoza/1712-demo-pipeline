@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+  <a class="navbar-brand" href="#">MERS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div id="navbarText" class="collapse navbar-collapse" >
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active" id="nav-home">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li id="nav-memories" class="nav-item dropdown" >
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Memories</a>
+        <div class="dropdown-menu">
+          <a id="nav-create-memory" class="dropdown-item" href="#">Create a Memory</a>
+          <div class="dropdown-divider"></div>
+          <a id="nav-pending-memories" class="dropdown-item" href="#">View Pending</a>
+          <a id="nav-resolved-memories" class="dropdown-item" href="#">View Resolved</a>
+          <a id="nav-all-memories" class="dropdown-item" href="#">View All</a>
+        </div>
+      </li>
+      <li id="nav-profile" class="nav-item">
+        <a class="nav-link" href="#">Profile</a>
+      </li>
+    </ul>
+    <form method="POST" action="logout"><button class="btn btn-outline-light my-2 my-sm-0">Logout</button></form>
+  </div>
+</nav>
+

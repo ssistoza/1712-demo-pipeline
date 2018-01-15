@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<h2 class="pt-5 pl-2">Create a Memory</h2>
+<div class="form-row align-items-center justify-content-center">
+	<div class="col-4">
+		<div class="form-group">
+			<label for="type-memory-label">Type Of Memory</label>
+			<select id="type-memory" class="form-control" name="type-memory"></select>
+		</div>
+	</div>
+	<div class="col-4">
+		<div class="form-group">
+			<label for="amount-memory-label">Amount</label>
+			<div class="input-group">
+				<div class="input-group-prepend">
+					<div class="input-group-text"><i class="fa fa-usd"></i></div>
+				</div>
+				<input id="amount-memory" name="amount-memory" class="form-control">
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="form-row align-items-center justify-content-center">
+
+	<div class="col-4">
+		<div class="form-group">
+			<label for="description-memory-label">Description</label>
+			<textarea id="description-memory" name="description-memory" class="form-control" maxlength="100"></textarea>
+		</div>
+	</div>
+
+	<div class="col-4">
+		<div class="form-group">
+			<label for="receipt-memory-label">Receipt</label>
+			<input type="file" class="form-control-file" id="receipt-memory" name="receipt-memory">
+		</div>
+	</div>
+</div>
+<div class="row align-items-center justify-content-center">
+	<div class="col-2"><button id="submit-memory" class="btn btn-dark">Submit</button></div>
+</div>
+
+<div class="pt-2" id="submitted-memories">
+	<table id="successful-submission" class="table">
+		<thead>
+			<th>Description</th>
+			<th>Type</th>
+			<th>Amount</th>
+			<th>Image</th>
+		</thead>
+		<tbody></tbody>
+	</table>
+</div>
+
+<!-- Script associated only to this view. The view loader is located in the main app.js  -->
+<script type="text/javascript">
+
+typeMemory();
+
+/** ------- Function to load the types into select tag ---*/
+/** ------------------------- START ----------------------*/
+function typeMemory() {
+	// Adds loading icon.
+	$('h2').append('<i id="please-wait" class="fa fa-refresh fa-spin fa-fw"></i>');
+
+	let xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4 && xhr.status ==200){
+			let allTypes = JSON.parse(xhr.responseText);
+
+			// Construct options of the reimbursement type.
+			let rows = "";
+			for (let i = 0; i < allTypes.length; i++) {
+				rows = rows + '<option category="'+allTypes[i].type+'" value="'+allTypes[i].id+'">'+allTypes[i].type+'</option>';
+			}
+
+			// Inject into select.
+			$('#type-memory').append(rows);
+
+			// Remove laoding icon
+			$('#please-wait').remove();
+		}
+	} // onreadysatatechange()
+
+	xhr.open("GET", "ajaxAllTypes", true);
+	xhr.send();
+}
+/** ------------------------- END ----------------------*/
+
+
+/** ------- Click Event Form Submitting Form ----------- */
+/** ------------------------- START ----------------------*/	
+$('#submit-memory').on("click", function () {
+	$('h2').append('<i id="please-wait" class="fa fa-refresh fa-spin fa-fw"></i>');
+	// Get the values to submit. 
+	let uType = $('#type-memory').val();
+	let uTypeName = $('#type-memory').find('option:selected').attr("category");
+	let uAmount = $('#amount-memory').val();
+	let uDesc = $('#description-memory').val();
+	let uReceipt = $('#receipt-memory')[0].files[0];
+
+	let rInfo = new FormData();
+
+	// Apend all data into form.
+	rInfo.append("receipt", uReceipt);
+	rInfo.append("type", uType);
+	rInfo.append("amount", uAmount);
+	rInfo.append("desc", uDesc);
+	
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4 && xhr.status ==200){
+
+			let trow = "<tr>";
+			trow = trow + "<td>"+uDesc+"</td>";
+			trow = trow + "<td>"+uTypeName+"</td>";
+			trow = trow + "<td>"+formatMoney(uAmount)+"</td>";
+			trow = trow + '<td><i class="fa fa-2x fa-check"></i></td></tr>';
+
+			// If successful add to a table.
+			$('#successful-submission>tbody').append(trow);
+
+			// Clear form.
+			$('#type-memory').val("");
+			$('#amount-memory').val("");
+			$('#description-memory').val("");
+			$('#receipt-memory').val("");
+
+			// Remove laoding icon
+			$('#please-wait').remove();
+
+		}
+	} // onreadystatechange
+
+	xhr.open("POST", "ajaxSubmitMemory", true);
+	xhr.send(rInfo);
+});
+/** ------------------------- END ----------------------*/
+</script>

@@ -1,0 +1,18 @@
+html, body {
+  background-color: #000000;
+  background-image: url("../img/dotted-pattern-backsplash.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: inherit; }
+
+form {
+  background-color: white; }
+
+.login-menu {
+  min-height: 40%; }
+
+button {
+  color: white;
+  background-color: #000000;
+  margin-bottom: 2%; }

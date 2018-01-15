@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<h2 class="pt-5 pl-2">Pending Memories</h2>
+<div id="admin-pending-memories">
+	<div class="pr-1 row justify-content-end">
+		<div class="col-3 pb-2 align-self-end">
+			<input class="form-control search" placeholder="Search">
+		</div>
+	</div>
+	<table class="table table-hover" id="admin-pending-table">
+		<thead>
+			<th>#</th>
+			<th>Submitted By</th>
+			<th>Type</th>
+			<th>Amount</th>
+			<th>Details</th>
+		</thead>
+		<tbody class="list"></tbody>
+	</table>
+</div>
+
+<!--  Hidden Modal Dialog (Allow Update Of Reimbursement) -->
+<div class="modal fade" id="view-details" tabindex="-1" role="dialog" aria-labelledby="UpdateReimbursement" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="details-title">Memory Detail of ID#<span class="m-mid"></span></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<table class="table">
+					<tr>
+						<th>Memory Id</th>
+						<td class="m-mid"></td>
+					</tr>
+					<tr>
+						<th>Author</th>
+						<td id="m-author"></td>
+					</tr>
+					<tr>
+						<th>Submitted</th>
+						<td id="m-submitted"></td>
+					</tr>
+					<tr>
+						<th>Resolved</th>
+						<td id="m-resolved"></td>
+					</tr>
+					<tr>
+						<th>Resolver</th>
+						<td id="m-resolver"></td>
+					</tr>
+					<tr>
+						<th>Amount</th>
+						<td id="m-amount"></td>
+					</tr>
+					<tr>
+						<th>Type</th>
+						<td id="m-type"></td>
+					</tr>
+					<tr>
+						<th>Status</th>
+						<td id="m-status"></td>
+					</tr>
+					<tr>
+						<th>Description</th>
+						<td id="m-description"></td>
+					</tr>
+
+					<tr>
+						<th>Receipt</th>
+						<td id="m-receipt"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="modal-footer">
+				<button value="3" type="button" class="submit-resolution btn btn-light">Deny</button>
+				<button value="2" type="button" class="submit-resolution btn btn-dark">Approve</button>
+			</div>
+		</div>
+	</div>
+</div> <!-- modal -->
+
+<script type="text/javascript">
+var pendingData;
+
+// Get just pending reimbursements 
+function retrievePendingMemories() {
+	// Add loading icon.
+	$('h2').append('<i id="please-wait" class="fa fa-refresh fa-spin fa-fw"></i>');
+
+	let xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4 && xhr.status ==200){
+			let pendingMemories = JSON.parse(xhr.responseText);
+			
+			// Construct table of pending memories.
+			let rows = "";
+			for (let i = 0; i < pendingMemories.length; i++) {
+				rows = rows + '<tr>';
+				rows = rows + '<td class="t-id">'+pendingMemories[i].id+"</td>";
+				rows = rows + '<td class="t-author">'+pendingMemories[i].authorName+"</td>";
+				rows = rows + '<td class="t-type">'+pendingMemories[i].typeName+"</td>";
+				rows = rows + '<td class="t-amount">'+formatMoney(pendingMemories[i].amount)+"</td>";
+				rows = rows + '<td><a class="pending-memory-detail badge badge-info" tid="'+i+'" data-target="#view-details" data-toggle="modal" href="#">View</a></td></tr>';
+			}
+
+			// Inject into table above into tbody.
+			$('#admin-pending-table>tbody').append(rows);
+
+			// Remove loading icon.
+			$('#please-wait').remove();
+
+			// Allow Searching through tables.
+			let options = {
+				valueNames: [ 't-id', 't-author','t-type', 't-amount' ]
+			};
+
+			let userList = new List('admin-pending-memories', options);
+
+			// Store locally for use
+			pendingData = pendingMemories;
+
+			// Add dynamic click to view modal foreach 
+			$('.pending-memory-detail').on('click', function () {
+				let i = $(this).attr('tid');
+				$('.m-mid').html(pendingData[i].id);
+				$('#m-author').html(pendingData[i].authorName);
+				$('#m-submitted').html(formatDateTime(pendingData[i].submitted));
+				$('#m-resolved').html(formatDateTime(pendingData[i].resolved));
+				$('#m-resolver').html(pendingData[i].resolverName);
+				$('#m-amount').html(formatMoney(pendingData[i].amount));
+				$('#m-type').html(pendingData[i].typeName);
+				$('#m-status').html(pendingData[i].statusName);
+				$('#m-description').html(pendingData[i].description);
+				$('#m-receipt').html(formatImage(pendingData[i].receipt));
+			});
+		}
+	} // onreadysatatechange()
+
+	xhr.open("POST", "ajaxPendingMemories", true);
+	xhr.send();
+}
+
+
+// Click event: Submit how it was resolved to be updated.	
+$('.submit-resolution').on("click", function () {
+	// Add a loader to dialog
+	$('.modal-footer').append('<i id="please-wait" class="fa fa-refresh fa-spin fa-fw"></i>');
+
+	// Get values of the user input.
+	let memoryId = $('#m-mid').html();
+	let resolvedHow = $(this).attr("value");
+	
+	// Place it into an object form.
+	var rInfo = {
+		id: memoryId,
+		status: resolvedHow
+	}
+
+	// Create a string JSON of the object.
+	rInfo = JSON.stringify(rInfo);
+	
+	// AJAX
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4 && xhr.status ==200){
+
+			// Reload pending w/ the updated changes.
+			loadPendingView();
+
+			// This removes the modal.
+			$('div.modal-backdrop').remove();
+			$('#please-wait').remove();
+		}
+	}
+
+	xhr.open("POST", "ajaxCloseReimbursement", true);
+	xhr.setRequestHeader("key",rInfo); //not required
+	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");//Must set the content-type
+	xhr.send(rInfo);
+});
+</script>
+

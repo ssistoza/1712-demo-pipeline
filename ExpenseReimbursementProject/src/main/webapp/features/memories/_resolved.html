@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<h2 class="pt-5 pl-2">Resolved Memories</h2>
+<div id="resolved-memories">
+	<div class="pr-1 row justify-content-end">
+		<div class="col-3 pb-2 align-self-end">
+      		<input class="form-control search" placeholder="Search">
+    	</div>
+	</div>
+	<table class="table table-hover" id="resolved-table">
+	<thead>
+		<th>#</th>
+		<th>Submitted</th>
+		<th>Type</th>
+		<th>Amount</th>
+		<th>Status</th>
+		<th>Details</th>
+	</thead>
+	<tbody class="list"></tbody>
+</table>
+</div>
+
+<!--  Hidden Modal Dialog (Allow View Of Reimbursement) -->
+<div class="modal fade" id="view-details" tabindex="-1" role="dialog" aria-labelledby="ViewReimbursement" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="details-title">Memory Detail of ID#<span class="m-mid"></span></h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<table class="table">
+					<tr>
+						<th>Memory Id</th>
+						<td class="m-mid"></td>
+					</tr>
+					<tr>
+						<th>Author</th>
+						<td id="m-author"></td>
+					</tr>
+					<tr>
+						<th>Submitted</th>
+						<td id="m-submitted"></td>
+					</tr>
+					<tr>
+						<th>Resolved</th>
+						<td id="m-resolved"></td>
+					</tr>
+					<tr>
+						<th>Resolver</th>
+						<td id="m-resolver"></td>
+					</tr>
+					<tr>
+						<th>Amount</th>
+						<td id="m-amount"></td>
+					</tr>
+					<tr>
+						<th>Type</th>
+						<td id="m-type"></td>
+					</tr>
+					<tr>
+						<th>Status</th>
+						<td id="m-status"></td>
+					</tr>
+					<tr>
+						<th>Description</th>
+						<td id="m-description"></td>
+					</tr>
+
+					<tr>
+						<th>Receipt</th>
+						<td id="m-receipt"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="modal-footer">
+				<button data-dismiss="modal" type="button" class="btn btn-dark">Close</button>
+			</div>
+		</div>
+	</div>
+</div> <!-- modal -->
+
+<script type="text/javascript">
+var resolvedData;
+
+// Get just resolved reimbursements 
+function retrieveResolvedMemories() {
+	// Add loading icon.
+	$('h2').append('<i id="please-wait" class="fa fa-refresh fa-spin fa-fw"></i>');
+	
+	let xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4 && xhr.status ==200){
+			let resolvedMemories = JSON.parse(xhr.responseText);
+
+			// Construct rows for table..
+			let rows = "";
+			for (let i = 0; i < resolvedMemories.length; i++) {
+				rows = rows + "<tr>";
+				rows = rows + '<td class="t-id">'+resolvedMemories[i].id+"</td>";
+				rows = rows + '<td class="t-submitted">'+formatDateTime(resolvedMemories[i].submitted)+"</td>";
+				rows = rows + '<td class="t-type">'+resolvedMemories[i].typeName+"</td>";
+				rows = rows + '<td class="t-amount">'+formatMoney(resolvedMemories[i].amount)+"</td>";
+				rows = rows + '<td class="t-status">'+resolvedMemories[i].statusName+"</td>";
+				rows = rows + '<td><a tid="'+i+'" class="resolved-memories-detail badge badge-info" data-target="#view-details" data-toggle="modal" href="#">View</a></td>';
+			}
+
+
+			// Inject rows into table.
+			$('#resolved-table>tbody').append(rows);
+
+			// Remove loading icon.
+			$('#please-wait').remove();
+
+			// Allow Searching.
+			let options = {
+                valueNames: [ 't-id', 't-type', 't-amount', 't-status' ]
+            };
+
+        	let userList = new List('resolved-memories', options);
+
+        	// Store locally for use
+			resolvedData = resolvedMemories;
+
+			// Add dynamic click to view links
+			$('.resolved-memories-detail').on('click', function () {
+				let i = $(this).attr('tid');
+				$('.m-mid').html(resolvedData[i].id);
+				$('#m-author').html(resolvedData[i].authorName);
+				$('#m-submitted').html(formatDateTime(resolvedData[i].submitted));
+				$('#m-resolved').html(formatDateTime(resolvedData[i].resolved));
+				$('#m-resolver').html(resolvedData[i].resolverName);
+				$('#m-amount').html(formatMoney(resolvedData[i].amount));
+				$('#m-type').html(resolvedData[i].typeName);
+				$('#m-status').html(resolvedData[i].statusName);
+				$('#m-description').html(resolvedData[i].description);
+				$('#m-receipt').html(formatImage(resolvedData[i].receipt));
+			});
+		}
+	} // onreadysatatechange()
+	
+	xhr.open("POST", "ajaxResolvedMemories", true);
+	xhr.send();
+}
+</script>

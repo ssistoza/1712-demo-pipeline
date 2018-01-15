@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<h2 class="pt-5 pl-2">All Employees</h2>
+<div id="all-employees">
+	<div class="pr-1 row justify-content-end">
+		<div class="col-3 pb-2">
+      		<input class="form-control search" placeholder="Search">
+    	</div>
+	</div>
+	<table class="table table-hover" id="all-employees-table">
+	<thead>
+		<th>#</th>
+		<th>Name</th>
+		<th>Username</th>
+		<th>Email</th>
+		<th>Role</th>
+	</thead>
+	<tbody class="list"></tbody>
+</table>
+</div>
+
+<script type="text/javascript">
+
+function retrieveAllEmployees() {
+	// Add loading icon.
+	$('h2').append('<i id="please-wait" class="fa fa-refresh fa-spin fa-fw"></i>');
+
+	let xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4 && xhr.status ==200){
+			let allEmployees = JSON.parse(xhr.responseText);
+
+			let rows = "";
+			for (let i = 0; i < allEmployees.length; i++) {
+				rows = rows + "<tr>";
+				rows = rows + '<td class="t-id">'+allEmployees[i].id+"</td>";
+				rows = rows + '<td class="t-name">'+allEmployees[i].firstName+" "+allEmployees[i].lastName+"</td>";
+				rows = rows + '<td class="t-uname">'+allEmployees[i].username+"</td>";
+				rows = rows + '<td class="t-email">'+allEmployees[i].email+"</td>";
+				rows = rows + '<td class="t-role">'+allEmployees[i].roleName+'</td></tr>';
+			}
+
+			// Inject into table above into tbody.
+			$('#all-employees-table>tbody').append(rows);
+
+			// Remove loading icon.
+			$('#please-wait').remove();
+
+			// Allow Searching.
+			var options = {
+                valueNames: [ 't-id', 't-name', 't-email', 't-role' ]
+            };
+
+        	var userList = new List('all-employees', options);
+		}
+	} // onreadysatatechange()
+
+	xhr.open("POST", "ajaxAllEmployees", true);
+	xhr.send();
+}
+</script>
+

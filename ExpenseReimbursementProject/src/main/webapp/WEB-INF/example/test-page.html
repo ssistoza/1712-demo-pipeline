@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Hello, world!</title>
+</head>
+<body>
+    <h1>Hello, world!</h1>
+
+    <p>This is the date string here:</p>
+    <pre id="date-string">2018-01-01 14:59:10.819078 America/New_York</pre>
+    <p>Test the date string formatter.</p>
+
+
+    <p>Test Icons</p>
+    <i class="fa fa-refresh fa-spin fa-2x fa-fw"></i>
+
+    
+
+    <button data-toggle="modal" data-target="#updateProfileModal">Test Modal</button>
+    <!-- Modal -->        
+    <div class="modal fade" id="updateProfileModal" tabindex="-1" role="dialog" aria-labelledby="UpdateProfile" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="updateYourProfile">Memory Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <tr>
+                            <th>Memory Id</th>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th>Author</th>
+                            <td>Amy Poehler</td>
+                        </tr>
+                        <tr>
+                            <th>Submitted</th>
+                            <td>12/31/1992</td>
+                        </tr>
+                        <tr>
+                            <th>Type</th>
+                            <td>Joy</td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>Pending</td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                        </tr>
+                        <tr>
+                            <th>Receipt</th>
+                            <td><img src="http://unsplash.it/200/300/?random"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button id="submit-profile" type="button" class="btn btn-light">Deny</button>
+                    <button id="submit-profile" type="button" class="btn btn-dark">Approve</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- modal -->
+
+    <!-- Datatables -->
+
+    <div id="users">
+      <input class="search" placeholder="Search" />
+      <table>
+        <!-- IMPORTANT, class="list" have to be at tbody -->
+        <tbody class="list">
+          <tr>
+            <td class="name">Jonny Stromberg</td>
+            <td class="born">1986</td>
+        </tr>
+        <tr>
+            <td class="name">Jonas Arnklint</td>
+            <td class="born">1985</td>
+        </tr>
+        <tr>
+            <td class="name">Martina Elm</td>
+            <td class="born">1986</td>
+        </tr>
+        <tr>
+            <td class="name">Gustaf Lindqvist</td>
+            <td class="born">1983</td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
+
+
+<p>
+    This is the money: 4.  Converting Here: <span id="money"></span>
+</p>
+
+
+<!-- Datatables -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+<!-- date and time formattting -->
+<script src="js/moment-with-locales.js" type="text/javascript"></script>
+
+<!-- Sorting library for tables -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
+<script type="text/javascript">
+   window.onload = function () {
+      let dateStringToFormat = document.getElementById('date-string').innerHTML;
+      let datetimeArray = dateStringToFormat.split(" ");
+      let date = moment(datetimeArray[0] + " " + datetimeArray[1]);
+      console.log(date.format('l LT'));
+      console.log(date.format('LT'));
+
+      var options = {
+        valueNames: [ 'name', 'born' ]
+    };
+
+    var userList = new List('users', options);
+
+    var string = numeral(1300).format('$0,0.00');
+    $('#money').html(string);
+}
+</script>
+
+
+
+</body>
+</html>

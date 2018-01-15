@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<h2 class="pl-2 pt-5">Your Profile <span class="pr-2 float-right"><button id="edit-profile" data-target="#updateProfileModal" data-toggle="modal" class="btn btn-primary btn-sm btn-dark"><i class="fa fa-cog"></i> Edit</button></span></h2>
+<div class="row">
+	<div class="col">
+		<table class="table table-condensed">
+			<tbody>
+				<tr>
+					<th>Username:</th>
+					<td class="i-username"></td>
+				</tr>
+				<tr>
+					<th>First Name:</th>
+					<td class="i-firstname"></td>
+				</tr>
+				<tr>
+					<th>Last Name:</th>
+					<td class="i-lastname"></td>
+				</tr>
+				<tr>
+					<th>Email:</th>
+					<td class="i-email"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="col-4 text-center">
+		<img src="https://placeimg.com/200/200/people" class="rounded" alt="img-placeholder">
+	</div>
+
+<!--  Hidden Modal Dialog (Allow Update Of Information) -->
+	<div class="modal fade" id="updateProfileModal" tabindex="-1" role="dialog" aria-labelledby="UpdateProfile" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="updateYourProfile">Update your Profile</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="f-username">Username: </label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<div class="input-group-text"><i class="fa fa-user"></i></div>
+							</div>
+							<input class="form-control" type="text" name="username" id="f-username">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="f-password">Password: </label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<div class="input-group-text"><i class="fa fa-key"></i></div>
+							</div>
+							<input class="form-control" type="password" name="password" id="f-password">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="f-email">Email: </label>
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<div class="input-group-text"><i class="fa fa-envelope"></i></div>
+							</div>
+							<input class="form-control" type="email" name="email" id="f-email">
+						</div>
+					</div> 
+				</div>
+				<div class="modal-footer">
+					<button id="submit-profile" type="button" class="btn btn-dark">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div> <!-- modal -->
+
+</div><!-- #view -->
+
+
+<!-- Scripts for this page -->
+<script type="text/javascript">
+
+/*** ---------  START ---------------------- */
+// Click event: Submit profile to be updated.	
+$('#submit-profile').on("click", function () {
+	
+	// Get values of the user input.
+	let uname = $('#f-username').val();
+	let pwd = $('#f-password').val();
+	let emailAddress = $('#f-email').val();
+	
+	// Place it into an object form.
+	var pInfo = {
+		username: uname,
+		password: pwd,
+		email: emailAddress	  
+	}
+
+	// Create a string JSON of the object.
+	pInfo = JSON.stringify(pInfo);
+	
+	// AJAX
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function() {
+		if(xhr.readyState == 4 && xhr.status ==200){
+
+			// Reload UserInfoView w/ the updated changes.
+			loadUserInfoView();
+
+			// This removes the modal.
+			$('div.modal-backdrop').remove();
+		}
+	}
+
+	xhr.open("POST", "ajaxProcessUserInfo", true);
+	xhr.setRequestHeader("key",pInfo); //not required
+	xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");//Must set the content-type
+	xhr.send(pInfo);
+});
+/*** ---------  END ---------------------- */
+
+
+// Click event: Inject prior information onto input boxes.
+$('#edit-profile').on("click", function() {
+	$('#f-username').val($('.i-username').text());
+	$('#f-email').val($('.i-email').text());
+});
+</script>

@@ -1,0 +1,1166 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"a",
+				"@author\tJavaDoc"
+			],
+			[
+				"form",
+				"formatDateTime"
+			],
+			[
+				"i",
+				"i\tTag"
+			],
+			[
+				"uTy",
+				"uTypeName"
+			],
+			[
+				"u",
+				"uAmount"
+			],
+			[
+				"input",
+				"input-group-text"
+			],
+			[
+				"in",
+				"input-group-prepend"
+			],
+			[
+				"inpu",
+				"input-group"
+			],
+			[
+				"amoun",
+				"amount"
+			],
+			[
+				"r",
+				"r_receipt"
+			],
+			[
+				"r_",
+				"r_amount"
+			],
+			[
+				"Ers",
+				"ErsReimbursement"
+			],
+			[
+				"get",
+				"getBase64Image〔function〕"
+			],
+			[
+				"ve",
+				"view-details"
+			],
+			[
+				"cl",
+				"class"
+			],
+			[
+				"status",
+				"statusName"
+			],
+			[
+				"th",
+				"th\tTag"
+			],
+			[
+				"for",
+				"format"
+			],
+			[
+				"moe",
+				"money"
+			],
+			[
+				"su",
+				"successful-submission"
+			],
+			[
+				"des",
+				"description-memory"
+			],
+			[
+				"amount",
+				"amount-memory"
+			],
+			[
+				"type",
+				"type-memory"
+			],
+			[
+				"memo",
+				"memoryId"
+			],
+			[
+				"h",
+				"html〔function〕"
+			],
+			[
+				"t-a",
+				"t-author"
+			],
+			[
+				"t",
+				"t-mid"
+			],
+			[
+				"pe",
+				"pendingData"
+			],
+			[
+				"pen",
+				"pendingData〔variable〕"
+			],
+			[
+				"moda",
+				"modal-body"
+			],
+			[
+				"tab",
+				"tableid"
+			],
+			[
+				"p",
+				"pendingData"
+			],
+			[
+				"pend",
+				"pendingData〔variable〕"
+			],
+			[
+				"upda",
+				"updateDetails〔function〕"
+			],
+			[
+				"from",
+				"form-control"
+			],
+			[
+				"Er",
+				"ErsReimbursement"
+			],
+			[
+				"all",
+				"allReimbursements"
+			],
+			[
+				"all-employe",
+				"all-employees-table"
+			],
+			[
+				"ses",
+				"sessionUser"
+			],
+			[
+				"fo",
+				"for\tAttr"
+			],
+			[
+				"l",
+				"link\tTag"
+			],
+			[
+				"al",
+				"allMemories"
+			],
+			[
+				"loa",
+				"loadSubmissionView"
+			],
+			[
+				"re",
+				"retrieveAllMemories"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"nav",
+				"nav-all-memories"
+			],
+			[
+				"lo",
+				"loadResolvedView"
+			],
+			[
+				"na",
+				"nav-resolved-memories"
+			],
+			[
+				"f-",
+				"f-username"
+			],
+			[
+				"i-",
+				"i-email"
+			],
+			[
+				"ret",
+				"retrievePersonalInformation"
+			],
+			[
+				"sr",
+				"script\tTag"
+			],
+			[
+				"emailA",
+				"emailAddress"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"res",
+				"resolving_party"
+			],
+			[
+				"reim",
+				"reimbursements"
+			],
+			[
+				"u_id",
+				"u_id_resolver"
+			],
+			[
+				"rim",
+				"reimbursements"
+			],
+			[
+				"remo",
+				"remove〔function〕"
+			],
+			[
+				"format",
+				"formatDateTime"
+			],
+			[
+				"forma",
+				"formatDateTime"
+			],
+			[
+				"da",
+				"datetimeArray"
+			],
+			[
+				"date",
+				"datetimeArray〔variable〕"
+			],
+			[
+				"dat",
+				"datetimeArray〔variable〕"
+			],
+			[
+				"html",
+				"html5\tTwitter Bootstrap Template"
+			],
+			[
+				"remove",
+				"removeClass〔function〕"
+			],
+			[
+				"ha",
+				"hasClass〔function〕"
+			],
+			[
+				"cla",
+				"classList"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"tem",
+				"templateScript〔variable〕"
+			],
+			[
+				"te",
+				"templateScript"
+			],
+			[
+				"ca",
+				"category"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"s",
+				"session"
+			],
+			[
+				"ErsU",
+				"ErsUserRoleDao"
+			],
+			[
+				"st",
+				"static"
+			],
+			[
+				"ErsReim",
+				"ErsReimbursementTypeDao"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"sy",
+				"sysout\tSysout Snippet"
+			],
+			[
+				"fi",
+				"first"
+			],
+			[
+				"se",
+				"second"
+			],
+			[
+				"secon",
+				"secondInput"
+			],
+			[
+				"proces",
+				"processThree"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"to",
+				"toOuput"
+			],
+			[
+				"str",
+				"stringToOutput"
+			],
+			[
+				"number",
+				"numberInput"
+			],
+			[
+				"u_",
+				"u_id_resolver"
+			],
+			[
+				"rs",
+				"rt_status"
+			],
+			[
+				"rt",
+				"rt_type"
+			],
+			[
+				"U",
+				"u_id_resolver"
+			],
+			[
+				"r_re",
+				"r_resolved"
+			],
+			[
+				"new",
+				"newDescription"
+			],
+			[
+				"ers",
+				"ers_reimbursements"
+			],
+			[
+				"set",
+				"setInt"
+			],
+			[
+				"ur",
+				"ur_id"
+			],
+			[
+				"ne",
+				"newStatus"
+			],
+			[
+				"ErsUser",
+				"ErsUserDaoTest"
+			],
+			[
+				"typ",
+				"typeName"
+			],
+			[
+				"E",
+				"ErsReimbursementType"
+			],
+			[
+				"ROL",
+				"ROLENAME"
+			],
+			[
+				"T",
+				"TYPE"
+			],
+			[
+				"RE",
+				"RESOLVER"
+			],
+			[
+				"D",
+				"DESCRIPTION"
+			],
+			[
+				"er",
+				"ers_reimbursement_status"
+			],
+			[
+				"em",
+				"email"
+			],
+			[
+				"S",
+				"SEQUENCE"
+			],
+			[
+				"ers_",
+				"ers_reimbursement"
+			],
+			[
+				"BE",
+				"BEFORE"
+			],
+			[
+				"U_",
+				"u_email"
+			],
+			[
+				"Con",
+				"CONSTRAINT"
+			],
+			[
+				"rol",
+				"role"
+			],
+			[
+				"pa",
+				"password"
+			],
+			[
+				"pr",
+				"private"
+			],
+			[
+				"stu",
+				"stud-name"
+			],
+			[
+				"app",
+				"appendChild"
+			],
+			[
+				"ap",
+				"appendChild"
+			],
+			[
+				"c",
+				"createElement"
+			],
+			[
+				"trans",
+				"transactionid"
+			],
+			[
+				"tran",
+				"transaction"
+			],
+			[
+				"tra",
+				"transaction"
+			],
+			[
+				"trans_",
+				"trans_seq"
+			],
+			[
+				"Tra",
+				"TransactionID"
+			],
+			[
+				"NU",
+				"NULL"
+			],
+			[
+				"Cr",
+				"CREATE"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/User/Python 3.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Python 3.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/User/Python 3.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 60.0,
+		"last_filter": "doxy setting",
+		"selected_items":
+		[
+			[
+				"doxy setting",
+				"Preferences: DoxyDoxygen Settings"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"li",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"wo",
+				"Word Wrap: Toggle"
+			],
+			[
+				"w",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ro",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"wr",
+				"Word Wrap: Toggle"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"u",
+				"Convert Case: Upper Case"
+			],
+			[
+				"up",
+				"Convert Case: Upper Case"
+			],
+			[
+				"Upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"snipp",
+				"BetterSnippetManager: Create New Snippet"
+			],
+			[
+				"emme",
+				"Emmet: Expand Abbreviation"
+			],
+			[
+				"r",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"ss css",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"res",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"scss",
+				"Set Syntax: CSS"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"term",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ti",
+				"Convert Case: Title Case"
+			],
+			[
+				"ca",
+				"Convert Case: camelCase"
+			],
+			[
+				"came",
+				"Convert Case: camelCase"
+			],
+			[
+				"lo",
+				"Convert Case: Lower Case"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: pri",
+				"Snippet: println"
+			],
+			[
+				"UPP",
+				"Convert Case: Upper Case"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"",
+				"Convert Case: Swap Case"
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"sq",
+				"Set Syntax: SQL"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"ma",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"mark",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"resou",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"vire",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"resource",
+				"PackageResourceViewer: Open Resource"
+			]
+		],
+		"width": 576.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/.git/COMMIT_EDITMSG",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/service/UserService.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/service/ServiceDelegator.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/service/Service.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/dao/user/ErsUserDao.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/service/AdminService.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/service/ReimbursementService.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/admin/ListEmployeesServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/admin/ListEmployeesViewServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/view/PendingViewServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/admin/CloseReimbursementServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/view/AllViewServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/view/JumbotronViewServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/requirements/readme.md",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/view/NavViewServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/view/ResolvedViewServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/view/SubmissionViewServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/view/UserInfoViewServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/AllServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/LoginServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/NewReimbursementServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/LogoutServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/TypeServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/PendingServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/UpdateUserInfoServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/UserInfoServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/ResolvedServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/features/memories/resolved.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/features/memories/_submit.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/resources/js/formatting.js",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/features/memories/_resolved.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/features/memories/_all.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/features/memories/_pending.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/features/memories/all.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/features/memories/pending.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/features/info/_info.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/features/employee/employee.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/login.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/dao/reimbursement/ErsReimbursementImpl.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/dao/reimbursement/ErsReimbursementDao.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/servlet/UploadReceiptServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/resources/dml.sql",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/resources/ddl.sql",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/features/nav/_nav.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/app.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/app.js",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/features/nav/nav.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/webapp/WEB-INF/example/test-page.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/model/ErsReimbursement.java",
+		"/Volumes/Nifty Drive Pro/Revature/2",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/model/ErsUser.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ShaneAvery_Sistoza_Code/ExpenseReimbursementProject/src/main/java/com/revature/dto/ErsUserDto.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/Angular-Projects/angular-information-project/angular-info-project/Angular-Notes",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/features/memories/_submit.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/servlet/view/JumbotronViewServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/features/nav/nav.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/features/jumbotron/_jumbotron.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/features/jumbotron/jumbotron.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/servlet/view/NavViewServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/service/AdminService.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/service/UserService.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/exception/NotLoggedInException.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/BankingAssignment/src/main/java/com/revature/exception/EmptyValueException.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/readme.md",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/servlet/LoginServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/features/nav/_nav.html",
+		"/Users/ShaneyBoi/.bash_profile",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/features/info/_info.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/WEB-INF/example/test-page.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/app.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/features/memories/_resolved.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/features/memories/_all.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/features/memories/_pending.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/dto/ErsReimbursementDto.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/app.js",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/servlet/LogoutServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/servlet/UpdateUserInfoServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/servlet/ResolvedServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/servlet/PendingServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/servlet/AllServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/JavaScript/AjaxBankingProject/src/main/java/com/revature/servlets/AjaxProcessTxServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/model/ErsUser.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/service/ReimbursementService.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/service/Service.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/service/ServiceDelegator.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/resources/ddl.sql",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/resources/dml.sql",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/test/java/com/revature/dao/ErsReimbursementTest.java",
+		"/Users/ShaneyBoi/Desktop/test.html",
+		"/Users/ShaneyBoi/Library/Application Support/Sublime Text 3/Packages/User/snippets/java/sysout.sublime-snippet",
+		"/Users/ShaneyBoi/Library/Application Support/Sublime Text 3/Packages/User/Snippets/Sysout Snippet.sublime-snippet",
+		"/Users/ShaneyBoi/Library/Application Support/Sublime Text 3/Packages/User/snippets/html/twitter-bootstrap.sublime-snippet",
+		"/Users/ShaneyBoi/Library/Application Support/Sublime Text 3/Packages/User/Snippets/Twitter Bootstrap",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/JavaScript/AjaxBankingProject/src/main/webapp/app.js",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/features/pending/_pending.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/servlet/UserInfoServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/servlet/view/NavServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/servlet/view/JumbotronServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/JavaScript/AjaxBankingProject/src/main/java/com/revature/servlets/AjaxNavbarServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/JavaScript/AjaxBankingProject/src/main/java/com/revature/servlets/AjaxDoTransactionServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/JavaScript/AjaxBankingProject/src/main/java/com/revature/servlets/AjaxBankInfoServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/JavaScript/AjaxBankingProject/src/main/java/com/revature/servlets/AjaxDashboardServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/JavaScript/AjaxBankingProject/src/main/java/com/revature/servlets/LoginServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/JavaScript/AjaxBankingProject/src/main/java/com/revature/service/AppService.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/servlet/AllReimbursementsServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/JavaScript/AjaxBankingProject/src/main/java/com/revature/dto/BankUserDTO.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/service/Services.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/service/DtoService.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/service/DtoServices.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/service/DtoServices",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/servlet/PendingReimbursementServlet.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/hb.js",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/features/pending/hb_pending.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/features/nav/hb_nav.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/resources/css/employee_main.css",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/java/com/revature/dto/ReimbursementTicketDto.java",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/WEB-INF/example/ex.handlebars.js",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/WEB-INF/example/employee.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/resources/scss/employee_main.scss",
+		"/Users/ShaneyBoi/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/ShaneyBoi/Library/Application Support/Sublime Text 3/Packages/CSS/Default.sublime-keymap",
+		"/Users/ShaneyBoi/Library/Application Support/Sublime Text 3/Packages/CSS/css_completions.py",
+		"/Users/ShaneyBoi/Library/Application Support/Sublime Text 3/Packages/CSS/syntax_test_css.css",
+		"/Users/ShaneyBoi/Library/Application Support/Sublime Text 3/Packages/CSS/Symbol List Group.tmPreferences",
+		"/Users/ShaneyBoi/Library/Application Support/Sublime Text 3/Packages/CSS/CSS.sublime-syntax",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/JavaScript/AjaxBankingProject/src/main/webapp/app.html",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/.gitignore",
+		"/Volumes/Nifty Drive Pro/Revature/my_git_repos/1712_dec11th_java_steve/ExpenseReimbursementProject/src/main/webapp/WEB-INF/_example/employee.html"
+	],
+	"find":
+	{
+		"height": 52.0
+	},
+	"find_in_files":
+	{
+		"height": 132.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"{",
+			"resolvedData",
+			"updateProfileModal",
+			"formData",
+			"SEQUENCE",
+			"reimbursements",
+			"button",
+			"resolvedData",
+			"pendingData",
+			"td",
+			"class=\"font-weight-bold\"",
+			"=",
+			"pInfo",
+			"memoryReceipt",
+			"receipt",
+			"describeYourMemory",
+			"2",
+			"values",
+			"insert into users",
+			"id",
+			"VALUES",
+			"values",
+			"insert into users",
+			"pInfo",
+			"pending",
+			"\"<td>\"",
+			"var",
+			"pendingReimbursements",
+			"allResolved",
+			"resolved",
+			"allPending",
+			"pending",
+			"requests",
+			"request",
+			"memories",
+			"\"<td>\"",
+			"pendingMemories",
+			"nav",
+			"EmptyValueException",
+			"exampleModalCenter",
+			"triggerUpdateModal",
+			"username",
+			"retrieveMyInformation",
+			"pendingMemories",
+			"TRIGGER",
+			"TRIGGE",
+			"span",
+			"Things",
+			"id",
+			"nav",
+			"BankUser",
+			"ReimbursementTicketDto",
+			"template",
+			" b",
+			" ",
+			"ers_user_roles",
+			"SEQUENCE",
+			"(rt_type)",
+			"ers_",
+			"PeopleMaker",
+			"CategoryMaker",
+			"ProgressMaker",
+			"ProgessMaker",
+			"er.get",
+			"rtTest.get",
+			"test.getUser\\(",
+			"eurTest.getRole",
+			"ReimbursementStatus(",
+			"ReimbursementStatus",
+			"ReimbursementStatus(",
+			"ReimbursementType(",
+			"ErsUserRole(",
+			"test.getErs",
+			"ErsUser",
+			"update",
+			"current",
+			"er",
+			"updateErsReimbursementAmount",
+			"AMOUNT"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 47.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 87.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Proj1.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"thread",
+				"my_git_repos/1712_dec11th_java_steve/Java/CoreJavaExamples/src/main/java/com/ex/thread/FirstThreadExample.java"
+			],
+			[
+				"bu",
+				"my_git_repos/1712_dec11th_java_steve/Java/CoreJavaExamples/src/main/java/com/ex/fileio/BufferedCharacterStream.java"
+			],
+			[
+				"blu",
+				"workspace-sts-3.9.1.RELEASE/ClassDemo/src/main/java/com/revature/pojo/Blue.java"
+			],
+			[
+				"prima",
+				"workspace-sts-3.9.1.RELEASE/ClassDemo/src/main/java/com/revature/pojo/PrimaryColor.java"
+			],
+			[
+				"maindriver",
+				"workspace-sts-3.9.1.RELEASE/ClassDemo/src/main/java/com/revature/MainDriver.java"
+			],
+			[
+				"labass",
+				"1712-java-labs/src/main/java/com/revature/shaneavery/LabAssignment2.java"
+			],
+			[
+				"test",
+				"1712_dec11th_java_steve/Java/CoreJavaExamples/src/test/java/com/ex/junit/CalculatorTest.java"
+			],
+			[
+				"autobo",
+				"1712_dec11th_java_steve/Java/CoreJavaExamples/src/main/java/com/ex/autoboxing/MainClass.java"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 320.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
